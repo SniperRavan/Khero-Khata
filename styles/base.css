@@ -61,8 +61,8 @@ aside nav li{
 
     grid-template-areas:
     "my-day team-updates"
-    "my-day calender"
-    "upcoming calender"
+    "my-day calendar"
+    "upcoming calendar"
     "upcoming add-task";
 }
 
@@ -79,8 +79,8 @@ aside nav li{
 .team-updates{
     grid-area: team-updates;
 }
-.calender-widget{
-    grid-area: calender;
+.calendAr-widget{
+    grid-area: calendar;
 }
 
 .add-task{
