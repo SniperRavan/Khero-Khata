@@ -60,6 +60,19 @@
     border: 2px solid var(--accent);
 }
 
+/* When a task is marked as completed */
+.task-item.completed .task-text{
+    text-decoration: line-through;
+    color: var(--text-dim);
+    opacity: 0.7;
+}
+
+.task-item.completed .checkbox{
+    background: var(--accent);
+    box-shadow: 0 0 12px rgba(180, 142, 173, 0.6), inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
 /* Tiny tags */
 .tag{
     font-size: 0.75rem;
