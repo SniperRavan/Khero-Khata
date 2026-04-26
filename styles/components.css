@@ -117,3 +117,57 @@
 .add-btn:active{
     box-shadow: inset 2px 2px 5px #131519, inset -2px -2px 5px #23272d;
 }
+
+/* --- Mini Calendar Widget --- */
+
+.calendar-nav{
+    display: flex;
+    gap: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mini-calendar{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.day-name{
+    font-size: 0.8rem;
+    color: var(--text-dim);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.date.faded{
+    color: #4a4a4a;
+}
+
+.date:hover:not(.active){
+    box-shadow: 2px 2px 5px #131519, -2px -2px 5px #23272d;
+    color: var(--accent);
+    transform: scale(0.95);
+}
+
+.date.active{
+    background: var(--bg-color);
+    color: var(--accent);
+    font-weight: bold;
+    box-shadow: var(--nm-inset);
+    border: 1px solid rgba(180, 142, 173, 0.3);
+    transform: scale(0.95);
+}
