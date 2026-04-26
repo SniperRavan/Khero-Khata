@@ -1,0 +1,18 @@
+:root{
+    /* background color */
+    --bg-color: #1b1e23;
+
+    /* Text colors */
+    --text-main: #e0e0e0;
+    --text-dim: #8a8a8a;
+
+    /* Neomorphic Shadows: Light source from Top-left */
+    /* Highlight (lighter than bg) */
+    --nm-light: 6px 4px 8px #131519, inset -4px -4px 8px #23272d;
+
+    /* Inset/Preseed effect */
+    --nm-inset: inset 4px 4px 8px #131519, inset -4px -4px 8px #23272d;
+
+    /* Accent: A deep industrial blue or teal */
+    --accent: #4cc9f0;
+}
