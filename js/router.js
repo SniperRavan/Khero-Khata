@@ -6,8 +6,7 @@ const routes = {
     projects: `
     <header class="page-header"><h1>Projects</h1></header>
     <div class="projects-grid">
-        <article class="card"><h3>Website Redsign</h3></article>
-        <article class="card"><h3>Mobile App</h3></article>
+        <article class="card"><h3>Website Redesign</h3></article>        <article class="card"><h3>Mobile App</h3></article>
     </div>
     `,
     team: `
