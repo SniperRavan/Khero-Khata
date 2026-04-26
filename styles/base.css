@@ -4,7 +4,7 @@ body{
     height: 100vh;
     background: var(--bg-color);
     color: var(--text-main);
-    font-family: 'Inter', 'sans-serif';
+    font-family: 'Inter', sans-serif;
 }
 
 aside{
@@ -17,4 +17,72 @@ main{
     flex-grow: 1;
     padding: 2rem;
     overflow-y: auto;
+}
+
+/* Sidebar Navigation Styling */
+aside nav ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+aside nav li{
+    margin-bottom: 15px;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-dim);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+    box-shadow: var(--nm-inset);
+}
+
+/* Home Layout */
+.page-header h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.home-grid{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+
+    grid-template-areas:
+    "my-day team-updates"
+    "my-day calender"
+    "upcoming calender"
+    "upcoming add-task";
+}
+
+.my-day{
+        grid-area: my-day;
+        min-height: 250px;
+    }
+
+.upcoming{
+    grid-area: upcoming;
+    min-height: 250px;
+}
+
+.team-updates{
+    grid-area: team-updates;
+}
+.calender-widget{
+    grid-area: calender;
+}
+
+.add-task{
+    grid-area: add-task;
 }
