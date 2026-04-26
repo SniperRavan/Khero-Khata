@@ -11,6 +11,7 @@
     --nm-light: 6px 4px 8px #131519, inset -4px -4px 8px #23272d;
 
     /* Inset/Preseed effect */
+    --nm-raised: 6px 6px 10px #131519, -6px -6px 10px #23272d;
     --nm-inset: inset 4px 4px 8px #131519, inset -4px -4px 8px #23272d;
 
     /* Accent: A deep industrial blue or teal */
