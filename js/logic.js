@@ -11,12 +11,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Quick Add Task Logic
-    const addBtn = document.querySelector('.addbtn');
+    const addBtn = document.querySelector('.add-btn');
     const taskInput = document.getElementById('quick-task-input');
 
     // Function to create a new task
     const createNewTask = () => {
-        const taskText = taskInput.ariaValueMax.trim();
+        const taskText = taskInput.value.trim();
         
         if (taskText !== '') {
             // Create a new <li> element
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Also trigger it if they press "Enter" on their keyboard
     taskInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
-            createNewTask;
+            createNewTask();
         }
     });
 });
