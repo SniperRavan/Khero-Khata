@@ -1,19 +1,24 @@
-:root{
-    /* background color */
-    --bg-color: #1b1e23;
+:root {
+/* Backgrounds */
+--bg-color: #26292d;
 
-    /* Text colors */
-    --text-main: #e0e0e0;
-    --text-dim: #8a8a8a;
+/* Text */
+--text-main: #e0e0e0;
+--text-dim: #8a8a8a;
 
-    /* Neomorphic Shadows: Light source from Top-left */
-    /* Highlight (lighter than bg) */
-    --nm-light: 6px 4px 8px #131519, inset -4px -4px 8px #23272d;
+/* Accent */
+--accent: #b48ead;
 
-    /* Inset/Preseed effect */
-    --nm-raised: 6px 6px 10px #131519, -6px -6px 10px #23272d;
-    --nm-inset: inset 4px 4px 8px #131519, inset -4px -4px 8px #23272d;
+/* Neomorphic Shadows — light source: top-left */
+--nm-raised: 10px 10px 20px #1a1c1f, -10px -10px 20px #32363b;
+--nm-inset:  inset 5px 5px 10px #1a1c1f, inset -5px -5px 10px #32363b;
+--nm-small:  4px 4px 8px #1a1c1f, -4px -4px 8px #32363b;
 
-    /* Accent: A deep industrial blue or teal */
-    --accent: #b48ead;
+/* Border radii */
+--radius-lg: 22px;
+--radius-md: 14px;
+--radius-sm: 10px;
+
+/* Transitions */
+--transition: 0.25s ease;
 }
