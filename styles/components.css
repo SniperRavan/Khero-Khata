@@ -68,3 +68,52 @@
     color: var(--accent);
     border-radius: 20px;
 }
+
+/* Quick Add Input Component */
+
+.input-groove{
+    display: flex;
+    align-items: center;
+    background: var(--bg-color);
+    border-radius: 12px;
+    padding: 6px 6px 6px 15px;
+    margin-top: 15px;
+    box-shadow: var(--nm-inset);
+}
+
+.input-groove input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-main);
+    flex-grow: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+}
+
+.input-groove input::placeholder{
+    color: var(--text-dim);
+}
+
+.add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    border: none;
+    background: var(--bg-color);
+    color: var(--text-dim);
+    cursor: pointer;
+    box-shadow: 4px 4px 8px #131519, -4px -4px 8px #23272d;
+    transition: all 0.2s ease;
+}
+
+.add-btn:hover{
+    color: var(--accent);
+}
+
+.add-btn:active{
+    box-shadow: inset 2px 2px 5px #131519, inset -2px -2px 5px #23272d;
+}
