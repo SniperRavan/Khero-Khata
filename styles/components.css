@@ -5,3 +5,66 @@
     border-radius: 20px;
     padding: 20px;
 }
+
+/* Card Internal Layouts */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.dots{
+    color: var(--text-dim);
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+/* Task List styling */
+.task-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: var(--bg-color);
+    padding: 13px 15px;
+    border-radius: 12px;
+    box-shadow: 3px 3px 6px #131519, -3px -3px 6px #23272d;
+}
+
+.task-text{
+    flex-grow: 1;
+    font-size: 0.95rem;
+}
+
+/* The Neomorphic Inset Checkbox */
+.checkbox{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    box-shadow: var(--nm-inset);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.checkbox:hover{
+    box-shadow: inset 2px 2px 5px #131519, inset -2px -2px 5px #23272d;
+    border: 2px solid var(--accent);
+}
+
+/* Tiny tags */
+.tag{
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    background: rgba(76, 201, 240, 0.1);
+    color: var(--accent);
+    border-radius: 20px;
+}
