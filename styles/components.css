@@ -1,3 +1,11 @@
+/* This prevents the right column from stretching weirdly */
+.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
 /* ---- Card ---- */
 
 .card {
@@ -6,6 +14,18 @@ box-shadow: var(--nm-raised);
 border-radius: var(--radius-lg);
 padding: 22px;
 border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.my-day {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    overflow: hidden;
+}
+
+.my-day .task-list {
+    flex: 1;
+    min-height: 0;
 }
 
 .card-header {
@@ -49,6 +69,8 @@ list-style: none;
 display: flex;
 flex-direction: column;
 gap: 10px;
+flex: 1;
+min-height: 0;
 }
 
 .task-item {
@@ -353,4 +375,46 @@ justify-content: flex-start;
 
 .upcoming-grid .tag {
 margin-left: auto;
+}
+
+/* ---- Scrollable Container with Gradient Fade ---- */
+.scroll-fade {
+    overflow-y: auto;
+    padding-bottom: 25px; /* Extra padding so the last item clears the fade */
+    
+    /* Hide the ugly default scrollbars */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    
+    /* The Gradient Mask Affordance */
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 10%,
+        black 85%,
+        transparent 100%
+    );
+        mask-image: linear-gradient(
+        to bottom,
+        transparent 0%,
+        black 12%,
+        black 85%,
+        transparent 100%
+    );
+}
+
+.scroll-fade::-webkit-scrollbar {
+    display: none;
+}
+
+/* Redesigning the Upcoming Grid to support scrolling tasks */
+.upcoming-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 210px;
+    gap: 15px;
+    align-items: end;
+}
+
+.task-list.scroll-fade {
+    max-height: 100%;
 }
