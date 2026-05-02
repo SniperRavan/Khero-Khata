@@ -1,9 +1,9 @@
 <div align="center">
 
 # 🌙 Khero Khata
-### <sub><sup>TaskFlow-inspired -  Dark Neomorphic Productivity Dashboard -  Vanilla JS</sup></sub>
+### <sub><sup>Dark Neomorphic Productivity Dashboard -  Vanilla JS</sup></sub>
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=26&duration=2800&pause=800&color=C8B6FF&center=true&vCenter=true&width=900&lines=Handcrafted+dark+neomorphic+dashboard.;TaskFlow-inspired+UI%2C+reimagined+as+Khero+Khata.;Built+with+HTML%2C+CSS%2C+and+Vanilla+JavaScript.;Home+page+implemented+%E2%80%94+more+screens+coming+next." alt="Typing intro" />
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=26&duration=2800&pause=800&color=C8B6FF&center=true&vCenter=true&width=900&lines=Handcrafted+dark+neomorphic+dashboard.;Built+with+HTML%2C+CSS%2C+and+Vanilla+JavaScript.;Home+page+implemented+%E2%80%94+more+screens+coming+next." alt="Typing intro" />
 
 <p>
   <img src="https://img.shields.io/github/repo-size/SniperRavan/Khero-Khata?style=for-the-badge&color=8b5cf6" alt="Repo size" />
